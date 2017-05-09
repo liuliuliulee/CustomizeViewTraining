@@ -29,7 +29,7 @@ public class CircleSearchView extends View {
 
     int measureHeight, measureWidth;
 
-    int circleRadius = 50, searchRadius = 25;
+    int circleRadius = 20, searchRadius = 10;
 
     // 画笔
     private Paint mPaint;
@@ -136,6 +136,34 @@ public class CircleSearchView extends View {
         mStartingAnimator.addListener(mAnimatorListener);
         mSearchingAnimator.addListener(mAnimatorListener);
         mEndingAnimator.addListener(mAnimatorListener);
+
+//        mStartingAnimator = ValueAnimator.ofFloat(0,1).setDuration(defaultDuration);
+//        mStartingAnimator.addUpdateListener(animation -> {
+//            mAnimatorValue = (float) animation.getAnimatedValue();
+//            invalidate();
+//        });
+//        mStartingAnimator.addListener(new Animator.AnimatorListener() {
+//            @Override
+//            public void onAnimationStart(Animator animation) {
+//
+//            }
+//
+//            @Override
+//            public void onAnimationEnd(Animator animation) {
+//                // getHandle发消息通知动画状态更新
+//                mAnimatorHandler.sendEmptyMessage(0);
+//            }
+//
+//            @Override
+//            public void onAnimationCancel(Animator animation) {
+//
+//            }
+//
+//            @Override
+//            public void onAnimationRepeat(Animator animation) {
+//
+//            }
+//        });
     }
 
     private void initListener() {
@@ -181,7 +209,7 @@ public class CircleSearchView extends View {
                         // 从开始动画转换好搜索动画
                         isOver = false;
                         mCurrentState = 2;
-                        mStartingAnimator.removeAllListeners();
+//                        mStartingAnimator.removeAllListeners();
                         mSearchingAnimator.start();
                         break;
                     case 2:
