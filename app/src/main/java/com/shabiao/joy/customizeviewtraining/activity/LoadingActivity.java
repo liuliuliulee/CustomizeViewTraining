@@ -1,4 +1,4 @@
-package com.shabiao.joy.customizeviewtraining;
+package com.shabiao.joy.customizeviewtraining.activity;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.util.Log;
 
+import com.shabiao.joy.customizeviewtraining.R;
 import com.shabiao.joy.customizeviewtraining.custiomizeView.LoadingView;
 
 public class LoadingActivity extends AppCompatActivity {

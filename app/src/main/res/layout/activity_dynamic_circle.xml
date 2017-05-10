@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.shabiao.joy.customizeviewtraining.DynamicCircleActivity">
+    tools:context="com.shabiao.joy.customizeviewtraining.activity.DynamicCircleActivity">
 
     <com.shabiao.joy.customizeviewtraining.custiomizeView.DynamicCircleView
         android:id="@+id/circle"

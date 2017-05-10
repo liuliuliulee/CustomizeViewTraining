@@ -1,8 +1,9 @@
-package com.shabiao.joy.customizeviewtraining;
+package com.shabiao.joy.customizeviewtraining.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.shabiao.joy.customizeviewtraining.R;
 import com.shabiao.joy.customizeviewtraining.custiomizeView.CircleSearchView;
 
 public class CircleSearchActivity extends AppCompatActivity {
