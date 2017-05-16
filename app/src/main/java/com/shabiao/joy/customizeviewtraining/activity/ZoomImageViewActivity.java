@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.shabiao.joy.customizeviewtraining.R;
 import com.shabiao.joy.customizeviewtraining.custiomizeView.ZoomImageView;
+import com.shabiao.joy.customizeviewtraining.viewPageTranfrom.RotatePageTransformer;
 
 public class ZoomImageViewActivity extends AppCompatActivity {
 
@@ -20,6 +21,7 @@ public class ZoomImageViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_zoom_image_view);
 
         ViewPager viewpager = (ViewPager) findViewById(R.id.view_pager);
+        viewpager.setPageTransformer(true,new RotatePageTransformer());
         viewpager.setAdapter(new PagerAdapter() {
 
             @Override

@@ -1,7 +1,9 @@
 package com.shabiao.joy.customizeviewtraining;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.util.DisplayMetrics;
+import android.util.TypedValue;
 import android.view.WindowManager;
 
 /**
@@ -31,6 +33,13 @@ public class UiUtils {
         } catch (Exception e) {
             return DisplayMetrics.DENSITY_DEFAULT;
         }
+    }
+
+    public static int dpToPx(Resources res, int dp) {
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, res.getDisplayMetrics());
+    }
+    public static int toSp(Resources res, int dp) {
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, dp, res.getDisplayMetrics());
     }
 
 }
