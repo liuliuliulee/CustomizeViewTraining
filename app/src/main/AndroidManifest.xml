@@ -21,18 +21,19 @@
         </activity>
         <activity android:name=".activity.LoadingActivity" />
         <activity android:name=".activity.RadarActivity" />
-        <activity android:name=".activity.CircleSearchActivity">
-
-        </activity>
+        <activity android:name=".activity.CircleSearchActivity"></activity>
         <activity android:name=".activity.DynamicCircleActivity" />
         <activity android:name=".activity.ZoomImageViewActivity">
+
+        </activity>
+        <activity android:name=".activity.JazzyActivity" />
+        <activity android:name=".activity.DrawPanActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.JazzyActivity"></activity>
     </application>
 
 </manifest>
