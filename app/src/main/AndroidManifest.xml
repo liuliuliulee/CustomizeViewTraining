@@ -21,13 +21,13 @@
         </activity>
         <activity android:name=".activity.LoadingActivity" />
         <activity android:name=".activity.RadarActivity" />
-        <activity android:name=".activity.CircleSearchActivity"></activity>
+        <activity android:name=".activity.CircleSearchActivity" />
         <activity android:name=".activity.DynamicCircleActivity" />
-        <activity android:name=".activity.ZoomImageViewActivity">
-
-        </activity>
+        <activity android:name=".activity.ZoomImageViewActivity"></activity>
         <activity android:name=".activity.JazzyActivity" />
         <activity android:name=".activity.DrawPanActivity">
+        </activity>
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
